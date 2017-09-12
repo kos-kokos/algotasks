@@ -1,6 +1,6 @@
-f = open('postfix.in', 'r')
-file_line = f.readline()
-f.close()
+#f = open('postfix.in', 'r')
+file_line = input()
+
 stack = []
 for val in  file_line.split(sep=" "):
     if val == "+" or val == "-" or val == "*":
@@ -15,8 +15,9 @@ for val in  file_line.split(sep=" "):
     else:
         stack.append(int(val))
 
-result_file = open("postfix.out", 'w')
-result_file.write(str(stack.pop()))
-result_file.flush()
-result_file.close()
+#result_file = open("postfix.out", 'w')
+#result_file.write(str(stack.pop()))
+#result_file.flush()
+#result_file.close()
+print(str(stack.pop()))
 
