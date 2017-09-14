@@ -45,8 +45,8 @@ def sort(ar: list):
     else:
         return ar
 
-n = int(input("Input N"))
-points_str = input("Input points")
+n = int(input())
+points_str = input()
 points_splitted = points_str.split(" ")
 points = []
 
